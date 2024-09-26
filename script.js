@@ -1,7 +1,7 @@
 // Simulação de usuário e senha
 const loginInfo = {
     username: "admin",
-    password: "1234"
+    password: "Alohomora"
 };
 
 // Elementos do DOM
