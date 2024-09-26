@@ -57,10 +57,10 @@ salvarAvisoBtn.addEventListener("click", function() {
 
     // Atualizar a cor do aviso com base na seleção do usuário
     avisoDiv.className = ''; // Remove classes antigas
-    if (corSelecionada === "amarelo") {
-        avisoDiv.classList.add("aviso-amarelo");
-    } else if (corSelecionada === "vermelho") {
+    if (corSelecionada === "vermelho") {
         avisoDiv.classList.add("aviso-vermelho");
+    } else if (corSelecionada === "amarelo") {
+        avisoDiv.classList.add("aviso-amarelo");
     } else if (corSelecionada === "verde") {
         avisoDiv.classList.add("aviso-verde");
     }
