@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Avisos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Quadro de Avisos -->
+    <div id="avisos-container" class="container">
+        <h2>Painel de Avisos</h2>
+        <div id="aviso" class="aviso-amarelo">
+            <p id="texto-aviso">Este é um aviso importante!</p>
+        </div>
+        <button id="editar-aviso">Editar Aviso</button>
+    </div>
+
+    <!-- Tela de Login (inicialmente oculta) -->
+    <div id="login-container" class="container" style="display:none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required><br>
+            <input type="password" id="password" placeholder="Senha" required><br>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Tela de Edição (inicialmente oculta) -->
+    <div id="editor-aviso-container" class="container" style="display:none;">
+        <h2>Editar Aviso</h2>
+        <textarea id="novo-aviso" rows="4" cols="50"></textarea><br>
+
+        <!-- Seletor de cor do aviso -->
+        <label for="cor-aviso">Escolha a cor do aviso:</label><br>
+        <select id="cor-aviso">
+            <option value="amarelo">Amarelo</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="verde">Verde</option>
+        </select><br><br>
+
+        <button id="salvar-aviso">Salvar Aviso</button>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
